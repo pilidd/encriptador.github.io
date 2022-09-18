@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <main class="main">
+        <img src="Vector.png" class="logo">      
+      <section class="div-principal">
+        <form action="">       
+          <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Escriba aquí su texto"></textarea>
+          <div class="form-group">
+            <img src="Vector-i.png" class="alert-logo">
+            <label for="input-texto">Solo letras minúsculas y sin acentos.</label>
+          </div>
+          <div class="botones-div">
+            <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar" >
+            <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+          </div>
+        </form>
+      </section>
+  
+      <section class="mensaje-box">
+        <div id="div-desaparece" class="mensaje-box-div">
+          <img src="img-back.png"> 
+          <h2>Ningún mensaje fue encontrado</h2>
+          <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+        </div>      
+        <div id="div-aparece">
+          <textarea class="div-mensaje" type="text" id="mensaje" placeholder="Ningún mensaje"></textarea>
+          <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+        </div>
+      </section>
+    </main>
+  
+    <script src="java.js"></script>
+  </body>
+</html>

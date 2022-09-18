@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*background: #f9fbfd;*/
+  }
+  
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: #5864af80;    
+    border-radius: 30px;
+    padding: 400px;
+    background: rgb(213 213 213 / 82%);
+    
+ 
+  }
+  
+  .titulo {
+    padding: 15px;
+    width: 30vw;
+    margin: auto;
+  
+  }
+  
+  .btn-encriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #2c136e;
+    border-radius: 24px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center; 
+
+    
+ 
+  
+  }
+.btn-encriptar:hover {
+    background-color: #6347b3;
+     
+}
+  
+  .btn-desencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+  
+ 
+  
+    background: #423f44;
+ 
+  
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+  
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    justify-content: center;
+  }
+
+  .btn-desencriptar:hover{
+    background-color: #818181;
+  }
+  
+  .text-input {
+   
+    text-transform:lowercase;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 15%;
+    top: 168px;
+  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+     
+   
+    resize: none;
+   
+  
+    color: #0A3871;
+    background: transparent;
+    border: none;
+    }
+  ::placeholder { color: #4a6688; }
+  
+  .text-input:focus { 
+    border: none;
+    outline: none;
+    
+    
+     }
+  
+
+
+
+
+
+  .mensaje-box{
+    position: absolute;
+    width: 400px;
+    height: 750px;
+    left: 70%;
+    top: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+   
+  
+    background: linear-gradient(#0c2749, #6b15db);
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    }
+
+
+  .mensaje-box h2{
+    display:inline-flex;
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+  
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+ 
+    text-align: center;
+  
+     
+    color: #ffffff;
+    background: transparent;
+  
+  
+ 
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+  }
+  
+  .mensaje-box h3{
+    display: inline-flex;
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+  
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+   
+  
+    text-align: center;
+  
+   
+  
+    color: #b5cde2;
+    background: transparent;
+  
+
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+  }
+  
+  .mensaje-box-div, .mensaje-box-div img {
+    padding-top: 40px;
+    background: #000000;
+    inline-size: -webkit-fill-available;
+    background: transparent;
+  }
+  
+  .alert-logo{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  
+  }
+   label {
+    position: static;
+    width: auto;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    padding-left: 25px;
+    font-weight: 600;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-size:15px;
+    line-height: 100%;
+      
+    color: #646e79;
+   }
+
+
+
+  .form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: auto;
+    height: 18px;
+    left: 13%;
+    top: 651px;
+    
+   }
+   .botones-div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 12%;
+    top: 685px;
+   }
+  .logo{
+    position: absolute;
+    left: 30px;
+    right: 37.43%;
+    top: 25px;
+    bottom: 0%;
+  
+  }
+  .div-mensaje{
+    position: absolute;
+    width: 400px;
+    height: 781px;
+    left: 50px;
+    top: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+     
+    resize: none;
+   
+    color: #f7f7f7;
+    border:none;
+    background:transparent;
+  }
+  .div-mensaje:focus { 
+    border: none;
+    outline: none;
+   }
+  .btn-copiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 25px;
+    top: 660px;
+  
+    
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    
+    
+    color: #0A3871;   
+    justify-content: center;
+
+  }
+  .btn-copiar:hover{
+    background-color: #bbc6f1;
+    cursor: pointer
+  }
+  .btn-copiar:active{
+    background-color: #8898da;
+  }
+  
+
+
+
+    
+  @media screen and (max-width:412px){
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
+    }
+
+    .main{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: #5864af80;
+      border-radius: 0px;
+      padding: 0px;
+      background: rgb(213 213 213 / 82%);
+    }
+
+    .logo{
+      position: absolute;
+      left: 30px;
+      right: 37.43%;
+      top: 25px;
+      bottom: 0%;
+    }
+
+
+
+  .div-principal{
+    width: 100%;
+  
+  }
+
+  .text-input {
+    width: 300px;
+    font-size: 25px;
+    left: 20%;
+    border: none;
+  }
+   
+
+.form-group {
+  display: flex;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  height: 18px;
+  left: 8%;
+  top: 675px;
+  align-items: flex-start;
+}
+
+.alert-logo {
+  position: relative;
+  right: 30px;
+   
+  top: 0%;
+  bottom: 0%;
+}
+
+label{
+  position: relative;
+  width: auto;
+  height: 18px;
+  left: -14px;
+  top: 0px;
+  font-weight: 600;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 100%;
+  color: #646e79;
+}
+
+
+
+  .botones-div {
+    display: flex;    
+    width: 318px;          
+    top: 782px;
+    justify-content: space-around;
+  }
+
+
+  .btn-encriptar {    
+    width: 160px;
+    height: 68px;
+    left: -361px;     
+    background: #2c136e;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+.btn-desencriptar {
+  width: 160px;
+  height: 67px;
+  left: -69px;
+  top: 6px;
+  background: #423f44;
+  border: 1px solid #0A3871;
+  box-sizing: border-box;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 24px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 19px;
+  justify-content: center;
+}
+
+
+
+.mensaje-box {
+position: relative;
+left: 0%;
+width: 100%;
+height: 723px;
+right: 394px;
+top: 897px;
+padding-left: 8px;
+padding-top: 105px;
+background: linear-gradient(#0c2749, #6b15db);
+box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
+border-radius: 0px;
+}
+
+.mensaje-box-div, .mensaje-box-div img {
+background: #000000;
+inline-size: -webkit-fill-available;
+background: transparent;
+padding: 0%;
+}
+
+.mensaje-box h2 {
+display: inline-flex;
+/* position: static; */
+width: auto; 
+height: 58px;
+left: 24px;
+/* top: 0px; */
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+line-height: 120%;
+text-align: center;
+color: #ffffff;
+background: transparent;
+flex: none;
+order: 0;
+/* align-self: stretch; */
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.mensaje-box h3 {
+/* display: inline-flex; */
+position: static;
+width: auto; 
+height: 48px;
+left: 0px;
+top: 74px;
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #b5cde2;
+background: transparent;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+
+
+
+}
+
